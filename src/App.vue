@@ -1,22 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header />
+  <Table />
+  <Footer />
+  <Pagination />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/Header.vue";
+import Table from "./components/Table.vue";
+import Footer from "./components/Footer.vue";
+import Pagination from "./components/Pagination.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Table,
+    Footer,
+    Pagination,
+  },
+};
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'El Messiri', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
